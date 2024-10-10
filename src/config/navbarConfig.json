@@ -1,0 +1,53 @@
+[
+  {
+    "type": "navLink",
+    "routePath": "#",
+    "text": "Home",
+    "disabled": false,
+    "isActive": true
+  },
+  {
+    "type": "navLink",
+    "routePath": "#",
+    "text": "Link",
+    "disabled": false,
+    "isActive": false
+  },
+  {
+    "type": "dropDownMenu",
+    "text": "DropDown Menu",
+    "children": [
+      {
+        "type": "dropDownLink",
+        "routePath": "#",
+        "text": "Action",
+        "disabled": false,
+        "isActive": false
+      },
+      {
+        "type": "dropDownLink",
+        "routePath": "#",
+        "text": "Another Action",
+        "disabled": false,
+        "isActive": false
+      },
+      {
+        "type": "dropDownDivider"
+      },
+      {
+        "type": "dropDownLink",
+        "routePath": "#",
+        "text": "Something Else",
+        "disabled": false,
+        "isActive": false
+      }
+    ]
+  },
+  {
+    "type": "navLink",
+    "routePath": "#",
+    "text": "Disabled",
+    "disabled": true,
+    "isActive": false
+  }
+]
