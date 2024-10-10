@@ -18,14 +18,14 @@
     "text": "DropDown Menu",
     "children": [
       {
-        "type": "dropDownLink",
+        "type": "navLink",
         "routePath": "#",
         "text": "Action",
         "disabled": false,
         "isActive": false
       },
       {
-        "type": "dropDownLink",
+        "type": "navLink",
         "routePath": "#",
         "text": "Another Action",
         "disabled": false,
@@ -35,7 +35,7 @@
         "type": "dropDownDivider"
       },
       {
-        "type": "dropDownLink",
+        "type": "navLink",
         "routePath": "#",
         "text": "Something Else",
         "disabled": false,

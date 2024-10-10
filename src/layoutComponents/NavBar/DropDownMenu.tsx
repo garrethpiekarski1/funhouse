@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { DropDownMenuConfig } from "./navbar-item-types";
 import DropDownDivider from "./DropDownDivider";
-import DropDownLink from "./DropDownLink";
+import NavLink from "./NavLink";
 
 export default function DropDownMenu({
   text,
@@ -23,13 +23,14 @@ export default function DropDownMenu({
       </a>
       <ul className={clsx("dropdown-menu", activeMenu && "show")}>
         {items.map((item, index) => {
-          return item.type === "dropDownLink" ? (
-            <DropDownLink
+          return item.type === "navLink" ? (
+            <NavLink
               key={index}
               routePath={item.routePath || "#"}
               text={item.text || "Link"}
               disabled={item.disabled}
               isActive={item.isActive}
+              inDrowpdown={true}
             />
           ) : (
             <DropDownDivider key={index} />

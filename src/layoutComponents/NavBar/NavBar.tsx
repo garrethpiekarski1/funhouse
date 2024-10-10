@@ -63,6 +63,7 @@ export default function NavBar() {
                   text={item.text || "Link"}
                   disabled={item.disabled}
                   isActive={item.isActive}
+                  inDrowpdown={false}
                 />
               ) : (
                 <DropDownMenu

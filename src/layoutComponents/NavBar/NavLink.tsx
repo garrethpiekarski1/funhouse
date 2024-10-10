@@ -6,12 +6,13 @@ export default function NavLink({
   text,
   isActive,
   disabled,
+  inDrowpdown,
 }: NavLinkProperties) {
   return (
     <li className="nav-item">
       <a
         className={clsx(
-          "nav-link",
+          inDrowpdown ? "dropdown-item" : "nav-link",
           isActive && "active",
           disabled && "disabled"
         )}

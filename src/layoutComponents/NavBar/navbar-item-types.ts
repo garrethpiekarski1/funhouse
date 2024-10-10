@@ -1,6 +1,7 @@
 export type NavLinkProperties = {
   routePath: string;
   text: string;
+  inDrowpdown: boolean;
   isActive?: boolean;
   disabled?: boolean;
 };
