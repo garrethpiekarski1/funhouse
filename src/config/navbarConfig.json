@@ -1,15 +1,15 @@
 [
   {
     "type": "navLink",
-    "routePath": "#",
+    "routePath": "/",
     "text": "Home",
     "disabled": false,
     "isActive": true
   },
   {
     "type": "navLink",
-    "routePath": "#",
-    "text": "Link",
+    "routePath": "about",
+    "text": "About",
     "disabled": false,
     "isActive": false
   },

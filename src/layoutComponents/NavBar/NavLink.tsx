@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavLinkProperties } from "./navbar-item-types";
 import clsx from "clsx";
 
@@ -10,16 +11,16 @@ export default function NavLink({
 }: NavLinkProperties) {
   return (
     <li className="nav-item">
-      <a
+      <Link
         className={clsx(
           inDrowpdown ? "dropdown-item" : "nav-link",
           isActive && "active",
           disabled && "disabled"
         )}
-        href={routePath}
+        to={routePath}
       >
         {text}
-      </a>
+      </Link>
     </li>
   );
 }

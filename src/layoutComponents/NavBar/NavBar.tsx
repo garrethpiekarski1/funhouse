@@ -2,7 +2,7 @@ import NavLink from "./NavLink";
 import DropDownMenu from "./DropDownMenu";
 import MENUCONFIG from "../../config/navbarConfig.json";
 import APPCONFIG from "../../config/appConfig.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import LoggedInInteraction from "./LoggedInInteraction";
 
@@ -13,12 +13,17 @@ export default function NavBar() {
   const [mobileNavShow, setMobileNavShow] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
-  window.addEventListener("resize", updateWindowSize);
-  function updateWindowSize() {
-    if (window.innerWidth > 992) {
-      setMobileNavShow(false);
+  useEffect(() => {
+    window.addEventListener("resize", updateWindowSize);
+    function updateWindowSize() {
+      if (window.innerWidth > 992) {
+        setMobileNavShow(false);
+      }
     }
-  }
+    return () => {
+      window.removeEventListener("resize", updateWindowSize);
+    };
+  }, []);
 
   function handleDropDownMenuOpen(menuIndex: number) {
     if (menuIndex === activeDropdown) {
