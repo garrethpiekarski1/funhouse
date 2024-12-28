@@ -15,12 +15,12 @@
   },
   {
     "type": "dropDownMenu",
-    "text": "DropDown Menu",
+    "text": "Funhouse Rides",
     "children": [
       {
         "type": "navLink",
-        "routePath": "#",
-        "text": "Action",
+        "routePath": "country-stuff",
+        "text": "Country Stuff",
         "disabled": false,
         "isActive": false
       },

@@ -1,0 +1,34 @@
+.countries-search {
+  background-color: #eeeeee;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  input {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+}
+
+.countries-list {
+  color: #ffffff;
+}
+
+.results-count {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.countries-detail {
+  .flag-container {
+    img {
+      border: 1px solid #eeeeee;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .crest-container img {
+    height: 5rem;
+    width: auto;
+    max-width: 100%;
+  }
+}

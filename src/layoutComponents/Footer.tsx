@@ -3,7 +3,7 @@ export default function Footer() {
   const appConfig = APPCONFIG;
   const year = new Date().getFullYear();
   return (
-    <footer className="fixed-bottom text-center">
+    <footer className="fixed-bottom text-center bg-white">
       &copy;{year.toString()} - {appConfig.appTitle} by {appConfig.author}
     </footer>
   );
